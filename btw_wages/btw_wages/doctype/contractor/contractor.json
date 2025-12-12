@@ -1,7 +1,7 @@
 {
  "actions": [],
  "autoname": "format:{worker_code} - {worker_name}",
- "creation": "2025-12-10 17:44:23.275959",
+ "creation": "2025-12-11 16:35:36.216190",
  "doctype": "DocType",
  "engine": "InnoDB",
  "field_order": [
@@ -15,21 +15,18 @@
   "column_break_hwlt",
   "status",
   "gender",
-  "worker_image",
   "section_break_sifm",
   "work_type",
-  "reporting_manager",
   "column_break_zled",
-  "contractor_name",
-  "basic_wage_rate",
+  "reporting_manager",
   "column_break_qceb",
   "department",
   "address",
   "contact_no",
   "column_break_kdap",
-  "emergency_contact_person_name",
   "emergency_contact",
   "column_break_ydki",
+  "emergency_contact_person_name",
   "tab_3_tab",
   "pf_number",
   "uan_no",
@@ -54,7 +51,7 @@
    "fieldname": "worker_code",
    "fieldtype": "Data",
    "in_list_view": 1,
-   "label": "Worker Code",
+   "label": "Contractor Code",
    "no_copy": 1,
    "reqd": 1,
    "unique": 1
@@ -65,9 +62,10 @@
    "label": "Date Of Joining"
   },
   {
-   "fieldname": "contractor_name",
-   "fieldtype": "Data",
-   "label": "Contractor Name"
+   "fieldname": "martial_status",
+   "fieldtype": "Select",
+   "label": "Martial Status ",
+   "options": "\nSingle\nMarried\nWidowed\nDivorced"
   },
   {
    "fieldname": "column_break_trcs",
@@ -76,7 +74,7 @@
   {
    "fieldname": "worker_name",
    "fieldtype": "Data",
-   "label": "Worker Name"
+   "label": "Contractor Name"
   },
   {
    "fieldname": "date_of_birth",
@@ -84,10 +82,9 @@
    "label": "Date Of Birth"
   },
   {
-   "fieldname": "department",
-   "fieldtype": "Link",
-   "label": "Department",
-   "options": "Department"
+   "fieldname": "bio",
+   "fieldtype": "Data",
+   "label": "Bio-metric ID"
   },
   {
    "fieldname": "column_break_hwlt",
@@ -106,10 +103,33 @@
    "options": "Gender"
   },
   {
+   "fieldname": "section_break_sifm",
+   "fieldtype": "Section Break"
+  },
+  {
    "fieldname": "work_type",
    "fieldtype": "Link",
    "label": "Work Type",
    "options": "Work Type"
+  },
+  {
+   "fieldname": "reporting_manager",
+   "fieldtype": "Data",
+   "label": "Reporting Manager"
+  },
+  {
+   "fieldname": "column_break_zled",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_qceb",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "department",
+   "fieldtype": "Link",
+   "label": "Department",
+   "options": "Department"
   },
   {
    "fieldname": "address",
@@ -142,12 +162,17 @@
   {
    "fieldname": "tab_3_tab",
    "fieldtype": "Tab Break",
-   "label": "Wage Details"
+   "label": "Bank Details"
   },
   {
    "fieldname": "pf_number",
    "fieldtype": "Data",
    "label": "PF Number"
+  },
+  {
+   "fieldname": "uan_no",
+   "fieldtype": "Data",
+   "label": "UAN No"
   },
   {
    "fieldname": "column_break_ylhe",
@@ -159,21 +184,6 @@
    "label": "Aadhar Number"
   },
   {
-   "fieldname": "pan_no",
-   "fieldtype": "Data",
-   "label": "PAN No"
-  },
-  {
-   "fieldname": "bio",
-   "fieldtype": "Data",
-   "label": "Bio-metric ID"
-  },
-  {
-   "fieldname": "uan_no",
-   "fieldtype": "Data",
-   "label": "UAN No"
-  },
-  {
    "fieldname": "esi_no",
    "fieldtype": "Data",
    "label": "ESI No"
@@ -181,6 +191,11 @@
   {
    "fieldname": "column_break_dyay",
    "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "pan_no",
+   "fieldtype": "Data",
+   "label": "PAN No"
   },
   {
    "fieldname": "section_break_xigp",
@@ -227,49 +242,15 @@
    "fieldname": "branch",
    "fieldtype": "Data",
    "label": "Branch"
-  },
-  {
-   "fieldname": "martial_status",
-   "fieldtype": "Select",
-   "label": "Martial Status ",
-   "options": "\nSingle\nMarried\nWidowed\nDivorced"
-  },
-  {
-   "fieldname": "section_break_sifm",
-   "fieldtype": "Section Break"
-  },
-  {
-   "fieldname": "reporting_manager",
-   "fieldtype": "Data",
-   "label": "Reporting Manager"
-  },
-  {
-   "fieldname": "column_break_zled",
-   "fieldtype": "Column Break"
-  },
-  {
-   "fieldname": "basic_wage_rate",
-   "fieldtype": "Currency",
-   "label": "Basic Wage Rate"
-  },
-  {
-   "fieldname": "column_break_qceb",
-   "fieldtype": "Column Break"
-  },
-  {
-   "fieldname": "worker_image",
-   "fieldtype": "Attach Image",
-   "label": "Worker Image"
   }
  ],
  "grid_page_length": 50,
- "image_field": "worker_image",
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-12-11 18:03:25.272769",
+ "modified": "2025-12-11 18:00:19.302972",
  "modified_by": "Administrator",
  "module": "BTW Wages",
- "name": "Worker",
+ "name": "Contractor",
  "naming_rule": "Expression",
  "owner": "Administrator",
  "permissions": [

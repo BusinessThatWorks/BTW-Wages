@@ -1,0 +1,124 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2025-12-11 16:53:39.152706",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "section_break_e3ww",
+  "work_type_code",
+  "amended_from",
+  "transactional_account",
+  "column_break_sivm",
+  "work_type_name",
+  "fixed_rate",
+  "rate_based_on_formula",
+  "contractor_commission_applicable",
+  "wage_rate",
+  "section_break_yeps",
+  "table_vuyr"
+ ],
+ "fields": [
+  {
+   "fieldname": "section_break_e3ww",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Work Type",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  },
+  {
+   "fieldname": "work_type_code",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Work Type Code",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_sivm",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "work_type_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Work Type Name",
+   "reqd": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "fixed_rate",
+   "fieldtype": "Check",
+   "label": "Fixed Rate"
+  },
+  {
+   "default": "0",
+   "fieldname": "rate_based_on_formula",
+   "fieldtype": "Check",
+   "label": "Rate Based On Formula"
+  },
+  {
+   "default": "0",
+   "fieldname": "wage_rate",
+   "fieldtype": "Currency",
+   "label": "Wage Rate",
+   "precision": "2"
+  },
+  {
+   "fieldname": "section_break_yeps",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "table_vuyr",
+   "fieldtype": "Table",
+   "options": "Wage Rule Component"
+  },
+  {
+   "fieldname": "transactional_account",
+   "fieldtype": "Link",
+   "label": "Transactional Account",
+   "options": "Account"
+  },
+  {
+   "default": "0",
+   "fieldname": "contractor_commission_applicable",
+   "fieldtype": "Check",
+   "label": "Contractor Commission Applicable "
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2025-12-11 17:09:59.465768",
+ "modified_by": "Administrator",
+ "module": "BTW Wages",
+ "name": "Work Type",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
