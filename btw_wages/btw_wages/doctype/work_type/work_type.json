@@ -53,18 +53,21 @@
   },
   {
    "default": "0",
+   "depends_on": "eval:!doc.rate_based_on_formula==1",
    "fieldname": "fixed_rate",
    "fieldtype": "Check",
    "label": "Fixed Rate"
   },
   {
    "default": "0",
+   "depends_on": "eval:!doc.fixed_rate==1;",
    "fieldname": "rate_based_on_formula",
    "fieldtype": "Check",
    "label": "Rate Based On Formula"
   },
   {
    "default": "0",
+   "depends_on": "eval:doc.fixed_rate==1;",
    "fieldname": "wage_rate",
    "fieldtype": "Currency",
    "label": "Wage Rate",
@@ -75,6 +78,7 @@
    "fieldtype": "Section Break"
   },
   {
+   "depends_on": "eval:doc.rate_based_on_formula==1",
    "fieldname": "table_vuyr",
    "fieldtype": "Table",
    "options": "Wage Rule Component"
@@ -96,7 +100,7 @@
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2025-12-11 17:09:59.465768",
+ "modified": "2025-12-15 11:17:53.249124",
  "modified_by": "Administrator",
  "module": "BTW Wages",
  "name": "Work Type",
@@ -117,7 +121,6 @@
   }
  ],
  "row_format": "Dynamic",
- "rows_threshold_for_grid_search": 20,
  "sort_field": "modified",
  "sort_order": "DESC",
  "states": []
