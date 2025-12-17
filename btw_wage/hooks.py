@@ -1,5 +1,5 @@
-app_name = "btw_wages"
-app_title = "BTW Wages"
+app_name = "btw_wage"
+app_title = "BTW Wage"
 app_publisher = "beetashoke chakraborty"
 app_description = "app for Wages"
 app_email = "beetashoke.chakraborty@clapgrow"
@@ -246,4 +246,3 @@ app_license = "mit"
 # ------------
 # List of apps whose translatable strings should be excluded from this app's translations.
 # ignore_translatable_strings_from = []
-
